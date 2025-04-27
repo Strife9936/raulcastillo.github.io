@@ -1,0 +1,137 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  .header, header:link, header:visited {
+    color: white;
+    text-decoration: none; /* remove default underline */
+    position: relative;
+    padding-bottom: 4px;
+  }
+  
+  .header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(90deg, white, white);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-size 0.23s ease-in;
+  }
+  
+  .header:hover::before {
+    background-size: 100% 100%;
+  }
+
+
+  
+  
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+
+
+
+  section {
+    padding: 2rem;
+  }
+
+  #hero {
+    background: #B0C4DE;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap; /* <-- add this */
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    
+    
+  }
+  
+  .projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%; /* around 30% to fit 3 per row (plus gap) */
+    min-width: 300px; /* optional: prevents squishing on smaller screens */
+    transition: transform 0.3s ease;
+  }
+
+  .projects-wrapper:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+  
+
+  .project {
+    width: 450px;
+    height: 300px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+  }
+
+ 
+  .project img {
+    width:400px;
+    height: auto;
+  }
+  
+  .project-label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+
+ 
+
+
+  .Linkedin{
+    background: #0077cc;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+  }
+  
