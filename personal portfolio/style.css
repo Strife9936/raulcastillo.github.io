@@ -1,0 +1,227 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  .header, header:link, header:visited {
+    color: white;
+    text-decoration: none; /* remove default underline */
+    position: relative;
+    padding-bottom: 4px;
+  }
+  
+  .header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(90deg, white, white);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-size 0.23s ease-in;
+  }
+  
+  .header:hover::before {
+    background-size: 100% 100%;
+  }
+
+
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+  nav ul {
+    list-style: none;
+    display:flex;
+    gap: 5rem;
+    margin-left:44%;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+
+  .Resume{
+      border: none;
+      color:black;
+      background-color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      margin-top: 20px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+  }
+
+  .Resume:hover{
+    background-color:gray;
+    color: white;
+  }
+ 
+  section {
+    padding: 2rem;
+  }
+
+  .about{
+    margin-bottom: 200px;
+    text-align: center;
+  }
+
+  .skills {
+    text-align: left;
+    padding: 2rem;
+  }
+  
+  .skills h2 {
+    margin-bottom: 2rem;
+    text-align: left;
+    padding-left: 21rem;
+    width:50%
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px; /* This ensures icon and label stay aligned */
+    transition: transform 0.3s ease;
+  }
+
+  .skill-wrapper:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+  
+  .skill {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+  }
+  
+  .skill img {
+    width: 60px;
+    height: auto;
+  }
+  
+  .skill-label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+
+  .Experience {
+    margin-top: 2rem;
+    margin-left:75rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+  }
+
+  .work-exp {
+    display: flex;
+    margin-top: 0; 
+    padding-top: 0; 
+    width: 40%; 
+  }
+
+  .work {
+    max-width: 500px; /* Controls the width of the work section */
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Adds rounded corners */
+    text-align: left; /* Align text within the work box to the left */
+    top:5rem;
+    position: relative;
+    left: 65rem;
+  }
+
+  .work h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .work p {
+    margin: 0.2rem 0;
+  }
+
+  .work ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  
+  #hero {
+    background: #B0C4DE;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  #Intro {
+    font-size: 1.5em;
+  }
+  
+  .ABOUT-ME {
+    line-height: 2; /* 2 = double spacing */
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 90%; /* 👈 this controls how wide the container can get */
+    margin: 0 auto; /* center it */
+    gap: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size:larger
+  }
+
+
+  .project {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #0077cc;
+  }
+
+  .Linkedin{
+    background: #0077cc;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+  }
+  
